@@ -3,23 +3,30 @@ package conditionals;
 import java.util.Scanner;
 
 public class IfElse {
-
+	
+/*
+ * Project Goals:
+	Build app using conditional statements
+	User inputs nums between 1-100
+	Diplay user's results based on num range
+*/
 	public static void main(String[] args) {
-		// Project Goals: user enters num between 1-100
-		//if num odd print odd
-		//if num even between 2-25 print "even & less than 25"
-		//if num entered is even between 26-60 print even
-		//if num is even and < 60 print num and  and even
-		//if num is odd and <60 print "odd and over 60"
-
 		int num;
-		Scanner scnr = new Scanner(System.in);
-		System.out.println("Please enter a number between 1 and 100.");
 		
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Please enter a number between 1-100.");
+		//change the var of num to scnr to receive the user input of inter/num
 		num = scnr.nextInt();
-		if (num %2==0 && num<25) {
-			
+		//simple sysout to test if num was received
+		System.out.println("Your number is "+num);
+		
+		//next do if else - line by line tiny bits. start with odd vs even
+		
+		if (num % 2==0) {
+			System.out.println("your number "+ num + " is even");
+		}
+		else {
+			System.out.println("your number " +num + " is odd");
 		}
 	}
-
 }
